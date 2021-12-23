@@ -32,21 +32,19 @@ module.exports = {
     'react/prop-types': 'off',
     'import/no-cycle': 'warn',
     'prettier/prettier': 'error',
-    'jsx-a11y/anchor-is-valid': 'off', // Does not work in Next.js"s <Link />
+    'no-use-before-define': 'off',
+    'jsx-a11y/anchor-is-valid': 'off', // Does not work in Next.js's <Link />
+    'react/react-in-jsx-scope': 'off',
     'space-before-function-paren': 'off',
     'import/prefer-default-export': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
+    'react/style-prop-object': 'off',
+
     'react/jsx-filename-extension': [
       1,
       { extensions: ['.ts', '.tsx', '.js', '.jsx'] },
     ],
-    'react/function-component-definition': [
-      2,
-      {
-        namedComponents: 'arrow-function',
-        unnamedComponents: 'arrow-function',
-      },
-    ],
+    'react/function-component-definition': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
