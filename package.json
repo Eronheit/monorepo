@@ -2,12 +2,15 @@
   "name": "monorepo",
   "version": "1.0.0",
   "main": "index.js",
-  "private": true, 
+  "private": true,
   "workspaces": {
     "packages": [
       "packages/*"
     ]
   },
   "author": "Eronheit <aquinoeronaldo@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
 }
