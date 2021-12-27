@@ -7,7 +7,10 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 module.exports = {
   mode: isDevelopment ? 'development' : 'production',
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.web.tsx', '.tsx', '.ts', '.js'],
+    alias: {
+      'react-native$': 'react-native-web'
+    }
   },
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
   module: {
@@ -19,7 +22,7 @@ module.exports = {
           loader: 'babel-loader'
         }
       }
-    ]
+    ],
   },
   devServer: {
     static: {

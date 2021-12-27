@@ -1,7 +1,14 @@
 import React from 'react';
+import { View, Text, Platform } from 'react-native';
+import { Title } from '@monorepo/components';
 
 const App: React.FC = () => {
-  return <h1>Hello world</h1>;
+  return (
+    <View>
+      <Title />
+      <Text>Platform: {Platform.OS}</Text>
+    </View>
+  );
 };
 
 export default App;
