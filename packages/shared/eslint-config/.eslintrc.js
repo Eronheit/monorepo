@@ -37,6 +37,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'space-before-function-paren': 'off',
     'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     'react/style-prop-object': 'off',
 
