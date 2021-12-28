@@ -1,0 +1,23 @@
+{
+  "name": "@monorepo/web-next",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@monorepo/components": "*",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native-web": "^0.17.5"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.5",
+    "@types/react": "17.0.38",
+    "babel-plugin-react-native-web": "^0.17.5",
+    "babel-plugin-transform-define": "^2.0.1"
+  }
+}
